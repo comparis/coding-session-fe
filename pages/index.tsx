@@ -36,7 +36,7 @@ const Home = ({
   return (
     <div>
       <Head>
-        <title>comapris.ch</title>
+        <title>comparis.ch</title>
         <meta name="description" content="comparis.ch" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
