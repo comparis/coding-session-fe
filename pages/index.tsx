@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.css";
 type Listing = {
   title: string;
   dealType: "Rent" | "Buy";
-  realestateType: "Flat" | "House";
+  listingType: "Flat" | "House";
   price: number;
   rooms: number;
   zipcode: number;
@@ -54,9 +54,11 @@ const Home = ({
                 <dt>Rooms:</dt>
                 <dd>{listing.rooms}</dd>
                 <dt>Type:</dt>
-                <dd>{listing.realestateType}</dd>
+                <dd>{listing.listingType}</dd>
                 <dt>City:</dt>
-                <dd>{listing.zipcode} {listing.city}</dd>
+                <dd>
+                  {listing.zipcode} {listing.city}
+                </dd>
               </dl>
             </div>
           ))}
