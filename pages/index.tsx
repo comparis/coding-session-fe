@@ -18,7 +18,7 @@ type Listing = {
 
 export const getServerSideProps = (async (context) => {
   const data = await fetch(
-    "https://cb7872bd-6f31-48e8-b9dd-4e63f88d2c2e-00-2itmukcy99ju.worf.replit.dev:5000/listing",
+    "http://localhost:5000/listing",
   );
 
   const response = (await data.json()) as Listing[];
